@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<!-- ***************************** * default settings * ***************************** -->
+
+<configuration>
+    <property>
+        <name>com.mapred.timewindows</name>
+        <value>180</value>
+    </property>
+
+    <property>
+        <name>com.mapred.datetimeformat</name>
+        <value>yyyyMMddHHmmss</value>
+    </property>
+
+    <property>
+        <name>com.mapred.columns</name>
+        <value>custid,channelid,event_time,event_type,main_category,genre1,genre2,genre3,duration,runlength</value>
+    </property>
+    <property>
+        <name>mapreduce.fileoutputcommitter.marksuccessfuljobs</name>
+        <value>false</value>
+    </property>
+    <property>
+        <name>parquet.enable.summary-metadata</name>
+        <value>false</value>
+    </property>
+</configuration>
